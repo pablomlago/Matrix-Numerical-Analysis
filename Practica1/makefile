@@ -1,7 +1,7 @@
 CC = f95
 MAIN= executable
 
-SRCS = prod_esc_vec.f95
+SRCS = tridiagxvector.f95
 
 OBJS = $(SRCS:.c=.o)
 
