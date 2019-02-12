@@ -1,4 +1,4 @@
-subroutine residuo
+subroutine residuo(a, b, u, r)
 
 implicit none
 
@@ -8,6 +8,6 @@ real, dimension(:), intent(in) :: u
 
 real, dimension(:), intent(inout) :: r
 
-r = A*u - b
+r = matmul(A,u) - b
 
 end subroutine

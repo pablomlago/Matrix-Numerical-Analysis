@@ -1,4 +1,4 @@
-subroutine sistu(a, b, u)
+subroutine sistub(a, b, u)
 
 implicit none
 
@@ -10,15 +10,11 @@ integer :: n, i, j
 
 n = size(b)
 
-u(n) = b(n)/a(n,n)
+u = b
 
 do i = n-1, 1, -1
-  u(i) = b(i)
-  do j = i+1, n
-    u(i) = u(i) - a(i,j)*u(j)
-  enddo
-
   u(i) = u(i)/a(i,i)
+  u(1:i-1) = u(1:i-1) - a(1:i-1, i)*u(i)
 enddo
 
 end subroutine
