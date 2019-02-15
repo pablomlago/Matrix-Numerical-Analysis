@@ -1,7 +1,7 @@
 CC = f95
 MAIN= executable
 
-SRCS = leer_mat.f95 sistub.f95 sistu_ppal.f95
+SRCS = sistub_interface.f95 leer_mat_interface.f95 leer_mat.f95 sistub.f95 sistu_ppal.f95
 
 OBJS = $(SRCS:.c=.o)
 
@@ -15,4 +15,4 @@ cleanall: clean
 	rm -f $(MAIN)
 
 clean:
-	rm -f *.o *.~w
+	rm -f *.mod *.~w

@@ -1,25 +1,25 @@
 program sistu_ppal
 
-interface
+use sistub_interface
+use leer_mat_interface
 
-  subroutine leer_mat(a, b, u)
-    real, dimension(:,:), intent(inout) :: a
-    real, dimension(:), intent(inout) :: b
-    real, dimension(:), intent(inout) :: u
-  end subroutine leer_mat
-
-  subroutine sistu(a, b, u)
-    real, dimension(:,:), intent(in) :: a
-    real, dimension(:), intent(in) :: b
-    real, dimension(:), intent(out) :: u
-  end subroutine sistu
-
-end interface
+implicit none
 
 real, dimension(:,:), allocatable :: a
 real, dimension(:), allocatable :: b
 real, dimension(:), allocatable :: u
 real, dimension(:), allocatable :: r
+
+integer :: n
+
+print*
+print*, 'Introduce o orde do sistema: '
+read*, n
+print*
+
+print*
+print*, 'O orde introduce e: ', n
+print*
 
 call leer_mat(a, b, u)
 call sistub(a, b, u)
