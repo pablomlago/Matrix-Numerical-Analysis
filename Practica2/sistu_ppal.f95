@@ -1,7 +1,7 @@
 program sistu_ppal
 
 use sistub_interface
-use leer_mat_interface
+use datasissim_interface
 
 implicit none
 
@@ -21,7 +21,11 @@ print*
 print*, 'O orde introduce e: ', n
 print*
 
-call leer_mat(a, b, u)
+allocate(a(n,n), b(n), u(n))
+
+u = 0
+
+call datasissim(a, b)
 call sistub(a, b, u)
 
 print*,
@@ -32,10 +36,10 @@ print*,
 print*, u
 print*,
 
-!if (allocated(a)) deallocate(a, stat=err)
+if (allocated(a)) deallocate(a)
 
-!if (allocated(b)) deallocate(b, stat=err)
+if (allocated(b)) deallocate(b)
 
-!if (allocated(u)) deallocate(u, stat=err)
+if (allocated(u)) deallocate(u)
 
 end program

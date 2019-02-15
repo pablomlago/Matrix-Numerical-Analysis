@@ -20,7 +20,7 @@ end do
 print*, 'A matriz A e: '
 
 do i=1,n
-  print formator4, a(i,:)
+  print*, a(i,:)
 end do
 
 print*
