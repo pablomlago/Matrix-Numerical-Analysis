@@ -14,7 +14,7 @@ print*, 'Introduza matriz triangular superior A (por filas parte superior):'
 
 do i=1,n
   print*, 'Fila :', i
-  read*, a(i,i:n)
+  read*, a(i,1:n)
 end do
 
 print*, 'A matriz A e: '
