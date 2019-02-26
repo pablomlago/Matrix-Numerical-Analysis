@@ -14,7 +14,6 @@ subroutine gaussb(a, b, deter)
 
   do k=1,n-1
     piv=a(k,k)
-    print*, piv
     if(abs(piv) < 1.e-12) then
       print*, 'Pivote nulo na etapa: ', k
       stop

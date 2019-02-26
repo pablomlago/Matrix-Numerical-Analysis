@@ -1,7 +1,7 @@
 CC = f95
 MAIN= executable
 
-SRCS = gaussb_interface.f95 datasissim_interface.f95 sistub_interface.f95 gaussb.f95 datasissim.f95 sistub.f95 gauss_ppal.f95
+SRCS = gausspp_interface.f95 datasissim_interface.f95 sistupf_interface.f95 residuo_interface.f95 gausspp.f95 datasissim.f95 sistupf.f95 residuo.f95 gauss_ppal.f95
 
 OBJS = $(SRCS:.c=.o)
 

@@ -29,5 +29,6 @@ read*, b
 
 print*, 'O termo independente b e: '
 print*, b
+print*, 
 
 end subroutine
