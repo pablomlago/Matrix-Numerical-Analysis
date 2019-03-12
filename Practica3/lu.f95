@@ -9,11 +9,7 @@ subroutine lu(a, deter)
   n = size(a(1,:));
   deter = 1
 
-print*,
-  print*, a(1,:)
-print*,
-
-  do j = 1,n
+  do r = 2,n
     if(abs(a(1,1)) < 1.e-12) then
       print*, 'ERROR!'
       stop
