@@ -8,12 +8,9 @@ use sistl_interface
 implicit none
 
 real, dimension(:,:), allocatable :: a
-real, dimension(:,:), allocatable :: a_copia
 real, dimension(:), allocatable :: b
-real, dimension(:), allocatable :: b_copia
 real, dimension(:), allocatable :: u
 real, dimension(:), allocatable :: w
-real, dimension(:), allocatable :: r
 
 real :: deter
 
@@ -28,15 +25,9 @@ print*
 print*, 'O orde introduce e: ', n
 print*
 
-allocate(a(n,n), a_copia(n,n), b(n), b_copia(n), u(n), w(n), r(n))
-
-u = 0
+allocate(a(n,n), b(n), u(n), w(n))
 
 call datasissim(a, b)
-
-a_copia = a
-
-b_copia = b
 
 call lu(a, deter)
 
@@ -60,9 +51,5 @@ if (allocated(a)) deallocate(a)
 if (allocated(b)) deallocate(b)
 
 if (allocated(u)) deallocate(u)
-
-if(allocated(r)) deallocate(r)
-
-if(allocated(a_copia)) deallocate(a_copia)
 
 end program

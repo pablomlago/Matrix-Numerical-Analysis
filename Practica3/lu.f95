@@ -6,7 +6,7 @@ subroutine lu(a, deter)
 
   integer :: n, j, i, r, k
 
-  n = size(a(1,:));
+  n = size(a(1,:))
   deter = 1
 
   do r = 2,n
