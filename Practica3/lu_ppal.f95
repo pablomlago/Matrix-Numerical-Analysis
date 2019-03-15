@@ -31,10 +31,6 @@ call datasissim(a, b)
 
 call lu(a, deter)
 
-do i=1,n
-  print*, a(i,:)
-end do
-
 call sistl(a,b,w)
 call sistu(a,w,u)
 
