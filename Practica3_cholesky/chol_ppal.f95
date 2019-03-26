@@ -1,9 +1,9 @@
-program sistu_ppal
+program chol_ppal
 
 use datasissim_interface
-use lu_interface
 use sistu_interface
 use sistl_interface
+use chol_interface
 
 implicit none
 
@@ -35,7 +35,7 @@ call sistl(a,b,w)
 call sistu(a,w,u)
 
 print*,
-print*, 'Vector u (solucion): '
+print*, 'Vector u (Solucion): '
 print*,
 
 print*,
@@ -45,7 +45,6 @@ print*,
 if (allocated(a)) deallocate(a)
 
 if (allocated(b)) deallocate(b)
-
 
 if (allocated(u)) deallocate(u)
 
