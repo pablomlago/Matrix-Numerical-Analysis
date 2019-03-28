@@ -1,0 +1,45 @@
+
+ Introduce o orde do sistema: 
+
+
+ O orde introduce e:            3
+
+
+ Introduza matriz triangular inferior A (por filas parte inferior):
+ Columna :           1
+ Columna :           2
+ Columna :           3
+ A matriz A e: 
+   10.0000000       0.00000000       0.00000000    
+   2.00000000      -10.0000000       0.00000000    
+   3.00000000       2.00000000      -10.0000000    
+
+ Introduza o termino independente b: 
+ O termo independente b e: 
+   15.0000000       37.0000000      -10.0000000    
+
+ A matriz A e: 
+   10.0000000       0.00000000       0.00000000    
+  0.200000003      -10.3999996       0.00000000    
+  0.300000012     -0.134615391      -10.7115383    
+
+ Vector w (Solucion): 
+
+
+   15.0000000       34.0000000      -9.92307663    
+
+
+ Vector z (Solucion): 
+
+
+   1.50000000      -3.26923084      0.926391363    
+
+
+ Vector u (Solucion): 
+
+
+   1.85098743      -3.14452434      0.926391363    
+
+
+ Residuo:    9.53674316E-07
+
