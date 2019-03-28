@@ -23,9 +23,7 @@ subroutine chol(a, deter)
 
   do k =2,n
      do j=1,k-1
-       print*, a(k,k)
        a(k,k)=a(k,k)-a(k,j)*a(k,j)
-       print*, a(k,k)
      end do
 
      if(a(k,k) .le. 1.e-8) then
