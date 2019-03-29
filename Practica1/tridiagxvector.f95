@@ -8,7 +8,7 @@ real, allocatable, dimension(:):: v, w, ad, al, au
 print*, 'Dame a dimension da matriz'
 read*, n
 
-allocate(ad(n), al(2:n). au(1:n-1), v(n), w(n))
+allocate(ad(n), al(2:n), au(1:n-1), v(n), w(n))
 
 print*, 'Dame a diagonal principal'
 read*, ad(1:n)
