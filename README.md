@@ -1,1 +1,1 @@
-# Matrix-and-Numeric-Analysis
+# Matrix-Numerical-Analysis
