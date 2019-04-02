@@ -65,4 +65,6 @@ subroutine gausspp(a, b, l, deter)
       stop
     end if
 
+   deter = deter*piv
+
 end subroutine
