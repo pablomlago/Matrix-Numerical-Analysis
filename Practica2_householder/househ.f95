@@ -61,6 +61,12 @@ subroutine househ(a, b, deter)
 
     sigma = sigma * (-1)
 
+    print*, 'A matriz A e: '
+
+    do i=1,n
+      print*, a(i,:)
+    end do
+
 end do
 
   deter = deter*sigma
