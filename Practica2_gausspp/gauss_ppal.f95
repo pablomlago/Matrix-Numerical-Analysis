@@ -1,4 +1,4 @@
-program sistu_ppal
+program gauss_ppal
 
 use gausspp_interface
 use sistupf_interface

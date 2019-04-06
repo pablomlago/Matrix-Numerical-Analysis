@@ -10,7 +10,7 @@ n = size(b)
 a = 0
 
 print*
-print*, 'Introduza matriz triangular superior A (por filas parte superior):'
+print*, 'Introduza matriz A non singular:'
 
 do i=1,n
   print*, 'Fila :', i

@@ -1,0 +1,29 @@
+
+ Introduce o orde do sistema: 
+
+
+ O orde introduce e:            3
+
+
+ Introduza matriz A non singular:
+ Fila :           1
+ Fila :           2
+ Fila :           3
+ A matriz A e: 
+   3.00000000      -3.00000000      -3.00000000    
+  -1.00000000       3.00000000      -1.00000000    
+  -1.00000000      -1.00000000       7.00000000    
+
+ Introduza o termino independente b: 
+ O termo independente b e: 
+   18.0000000       12.0000000       24.0000000    
+
+
+ Residuo:    0.00000000    
+
+
+ Vector u (Solucion): 
+
+
+   39.0000000       21.0000000       12.0000000    
+

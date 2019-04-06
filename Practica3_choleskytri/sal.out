@@ -1,0 +1,37 @@
+ Introduce o orde do sistema: 
+
+ O orde introducido e:            3
+
+
+ Introduce a diagonal principal: 
+
+
+ Introduce a diagonal inferior: 
+
+ Introduce el segundo miembro: 
+
+
+ Diagonal principal:    1.00000000       2.00000000       3.00000000    
+ Diagonal inferior    1.00000000       1.00000000    
+ Segundo miembro:    3.00000000       4.00000000       5.00000000    
+
+
+ Diagonal principal:    1.00000000       1.00000000       1.41421354    
+ Diagonal inferior    1.00000000       1.00000000    
+ Segundo miembro:    3.00000000       4.00000000       5.00000000    
+
+   4.00000000    
+   3.00000000    
+   1.00000000    
+   5.00000000    
+   1.00000000    
+   1.41421354    
+ Vector w:
+   3.00000000       1.00000000       2.82842708    
+
+
+ Vector u (Solucion): 
+
+
+   4.00000000      -1.00000000       2.00000000    
+

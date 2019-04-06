@@ -10,10 +10,14 @@ subroutine croutsim(a, deter)
     a(i,1) = a(i,1) / a(1,1)
   end do
 
+  deter = a(1,1)
+
   do j = 2, n
     do k=1, j-1
       a(j,j) = a(j,j) - a(j,k)*a(j,k)*a(k,k)
     end do
+
+    deter = deter*a(j,j)
 
     do i= j+1, n
       do k=1, j-1

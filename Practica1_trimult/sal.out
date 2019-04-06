@@ -1,0 +1,31 @@
+ Dame a dimension da matriz
+
+ O orde do sistema e: 
+           5
+
+ Dame a diagonal principal
+
+  A diagonal principal e :
+  -1.00000000       2.00000000      -6.00000000       3.00000000       1.00000000    
+
+ Dame a diagonal superior
+
+  A diagonal superior e :
+   3.00000000       1.00000000       2.00000000       3.00000000    
+
+ Dame a diagonal inferior
+
+  A diagonal inferior e :
+   3.00000000       5.00000000      -2.00000000       1.00000000    
+
+ Dame o vector
+
+  O vector e :
+   1.00000000       2.00000000       3.00000000       4.00000000       5.00000000    
+
+ Vector w:   -1.00000000       4.00000000      -18.0000000       12.0000000       5.00000000    
+ Vector w:    5.00000000       7.00000000      -10.0000000       27.0000000       5.00000000    
+ Vector w:    5.00000000       10.0000000       0.00000000       21.0000000       9.00000000    
+
+ Vector w:    5.00000000       10.0000000       0.00000000       21.0000000       9.00000000    
+

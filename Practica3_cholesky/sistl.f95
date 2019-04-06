@@ -14,19 +14,7 @@ print*, 'O termo independente b e: '
 print*, b
 print*,
 
-print*,'dEBUG'
-print*, a(1,1)
-print*,
-
-print*,'dEBUG'
-print*, b(1)
-print*,
-
 w(1) = b(1)/a(1,1)
-
-print*,'dEBUG'
-print*, w(1)
-print*,
 
 do i = 2,n
   w(i) = b(i)
