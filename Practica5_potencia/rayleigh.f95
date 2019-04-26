@@ -1,21 +1,22 @@
-subroutine rayleigh (a, xlam, eps, nmaxit, ier)
+subroutine rayleigh (a, u, xlam, eps, nmaxit, ier)
 
   implicit none
 
   real, dimension(:,:), intent(in) :: a
+  real, dimension(:), intent(out) :: u
   real, intent(inout) :: xlam
   real, intent(in) :: eps
   integer, intent(in) :: nmaxit
   integer, intent(inout) :: ier
 
-  real,dimension(:), allocatable :: u, v
+  real,dimension(:), allocatable :: v
 
   integer :: n, iter, i, j
   real :: xn , s, xlam1, xlam2
 
   n = size(a(1,:))
 
-  allocate(u(n), v(n))
+  allocate(v(n))
 
   u = 0
   u(1) = 1

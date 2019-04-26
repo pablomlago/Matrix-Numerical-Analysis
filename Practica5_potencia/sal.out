@@ -20,9 +20,13 @@
  O numero maximo de iteracions e:          100
 
 
- Introduce o epsilon para o tes de parada: 
+ Introduce o epsilon para o test de parada: 
 
 
  O epsilon introducido e:    9.99999994E-09
 
+ Un vector propio e:    8.51861387E-03  0.383657008      0.923436403    
  O autovalor dominante e    22.3272667    
+
+ Residuo:    2.90297407E-06
+

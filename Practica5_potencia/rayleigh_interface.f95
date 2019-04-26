@@ -1,8 +1,9 @@
 module rayleigh_interface
   interface
-    subroutine rayleigh(a, xlam, eps, nmaxit, ier)
+    subroutine rayleigh(a, u, xlam, eps, nmaxit, ier)
       implicit none
       real, dimension(:,:), intent(in) :: a
+      real, dimension(:), intent(out) :: u
       real, intent(inout) :: xlam
       real, intent(in) :: eps
       integer, intent(in) :: nmaxit

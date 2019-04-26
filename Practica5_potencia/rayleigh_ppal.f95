@@ -2,10 +2,12 @@ program rayleigh_ppal !inicio del programa rayleigh_ppal
 
   use datasissim_interface
   use rayleigh_interface
+  use residuo_interface
 
   implicit none
 
   real, dimension(:,:), allocatable :: a
+  real, dimension(:), allocatable :: u, r
 
   integer :: n, nmaxit, ier
   real :: xlam, eps
@@ -19,7 +21,7 @@ program rayleigh_ppal !inicio del programa rayleigh_ppal
   print*, 'O orde introduce e: ', n
   print*
 
-  allocate(a(n,n))
+  allocate(a(n,n), u(n), r(n))
 
   call datasissim(a)
 
@@ -41,8 +43,12 @@ program rayleigh_ppal !inicio del programa rayleigh_ppal
   print*, 'O epsilon introducido e: ', eps
   print*
 
-  call rayleigh(a, xlam, eps, nmaxit, ier)
+  call rayleigh(a, u, xlam, eps, nmaxit, ier)
+
+  print*, 'Un vector propio e: ', u
 
   print*, 'O autovalor dominante e ', xlam
+
+  call residuo(a, u, xlam, r)
 
 end program
