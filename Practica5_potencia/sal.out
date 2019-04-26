@@ -1,0 +1,28 @@
+
+ Introduce o orde da matriz: 
+
+
+ O orde introduce e:            3
+
+
+ Introduza matriz A:
+ Fila :           1
+ Fila :           2
+ Fila :           3
+ A matriz A e: 
+   4.00000000      -2.00000000       1.00000000    
+   20.0000000      -7.00000000       12.0000000    
+  -8.00000000       13.0000000       17.0000000    
+
+ Introduce o numero maximo de iteracions: 
+
+
+ O numero maximo de iteracions e:          100
+
+
+ Introduce o epsilon para o tes de parada: 
+
+
+ O epsilon introducido e:    9.99999994E-09
+
+ O autovalor dominante e    22.3272667    

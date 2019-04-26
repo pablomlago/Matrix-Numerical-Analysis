@@ -1,0 +1,37 @@
+
+ Introduce o orde do sistema: 
+
+
+ O orde introduce e:            3
+
+
+ Introduce o epsilon: 
+
+
+ Introduce o numero maximo de iteracions: 
+
+
+ Introduza matriz triangular superior A (por filas parte superior):
+ Fila :           1
+ Fila :           2
+ Fila :           3
+ A matriz A e: 
+   4.00000000      -2.00000000       1.00000000    
+   20.0000000      -7.00000000       12.0000000    
+  -8.00000000       13.0000000       17.0000000    
+
+ Introduza o termino independente b: 
+ O termo independente b e: 
+   11.0000000       70.0000000       17.0000000    
+
+
+   4.00000000      -2.00000000       1.00000000    
+   20.0000000      -7.00000000       12.0000000    
+  -8.00000000       13.0000000       17.0000000    
+
+
+ Vector u (solucion): 
+
+
+   1.00000286      -2.00001097       2.99999642    
+
