@@ -1,0 +1,38 @@
+
+ Introduce o orde da matriz: 
+
+
+ O orde introduce e:            3
+
+
+ Introduza matriz A:
+ Fila :           1
+ Fila :           2
+ Fila :           3
+ A matriz A e: 
+   4.00000000      -2.00000000       1.00000000    
+   20.0000000      -7.00000000       12.0000000    
+  -8.00000000       13.0000000       17.0000000    
+
+ Introduce a aproximacion do autovalor: 
+
+
+ A aproximacion do autovalor introducido e:    0.00000000    
+
+
+ Introduce o numero maximo de iteracions: 
+
+
+ O numero maximo de iteracions e:          100
+
+
+ Introduce o epsilon para o test de parada: 
+
+
+ O epsilon introducido e:    9.99999994E-09
+
+ Un vector propio e:   0.499888480      0.784347892     -0.367300838    
+ O autovalor dominante e   0.127142981    
+
+ Residuo:    3.83831463E-07
+
