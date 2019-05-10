@@ -13,6 +13,7 @@ subroutine chol(a, deter)
     stop
   end if
 
+  deter = a(k,k)
   a(1,1) = sqrt(a(1,1))
 
   deter = a(1,1)
@@ -30,7 +31,8 @@ subroutine chol(a, deter)
        print*, "A matriz pode ser non definida"
        stop
      end if
-
+     
+    deter = deter*a(k,k)
     a(k,k) = sqrt(a(k,k))
 
     do i=k+1,n
@@ -39,7 +41,6 @@ subroutine chol(a, deter)
       end do
       a(i,k) = a(i,k)/a(k,k)
     end do
-    deter = deter*a(k,k)
   end do
 
   print*, 'Fact Cholesky: '

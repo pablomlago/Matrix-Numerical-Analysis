@@ -1,0 +1,34 @@
+ Introduce o orde do sistema: 
+
+ O orde introducido e:            4
+
+
+ Introduce a diagonal principal: 
+
+
+ Introduce a diagonal superior: 
+
+
+ Introduce a diagonal inferior: 
+
+
+ Introduce el segundo miembro: 
+
+
+ Diagonal principal:    4.00000000       5.00000000       6.00000000       7.00000000    
+ Diagonal superior:    1.00000000       2.00000000       3.00000000    
+ Diagonal inferior    2.00000000       3.00000000       4.00000000    
+ Segundo miembro:    1.00000000       2.00000000       3.00000000       4.00000000    
+
+
+ Vector r (Solucion): 
+
+
+  0.177419364      0.290322542       9.67742577E-02  0.516128957    
+
+
+ Tridiag:    1.00000000       2.00000000       3.00000000       3.99999976    
+
+
+ Residuo:    2.38418579E-07
+
