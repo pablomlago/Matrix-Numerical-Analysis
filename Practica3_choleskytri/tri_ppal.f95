@@ -1,8 +1,10 @@
 program tri_ppal
 
+use residuotri_interface
+
 implicit none
 
-real, dimension(:), allocatable :: a,b,c,r,w,u
+real, dimension(:), allocatable :: a, a_copia, b, b_copia,r, w,u, res
 
 integer :: n, i, j
 
@@ -12,7 +14,7 @@ print*
 print*, 'O orde introducido e: ', n
 print*
 
-allocate(a(n), b(2:n), r(n), w(n), u(n))
+allocate(a(n), b(2:n), r(n), w(n), u(n), a_copia(n), b_copia(n), res(n))
 
 print*,
 print*, 'Introduce a diagonal principal: '
@@ -33,6 +35,9 @@ print*, 'Diagonal principal: ',a(1:n)
 print*, 'Diagonal inferior ', b(2:n)
 print*, 'Segundo miembro: ',r(1:n)
 print*,
+
+a_copia = a
+b_copia = b
 
 a(1) = sqrt(a(1))
 
@@ -74,5 +79,6 @@ print*,
 print*, u
 print*,
 
+call residuotri(a_copia, b_copia, b_copia, u, r, res)
 
 end program
