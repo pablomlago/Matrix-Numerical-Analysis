@@ -10,11 +10,11 @@ n = size(b)
 a = 0
 
 print*
-print*, 'Introduza matriz triangular inferior A (por filas parte inferior):'
+print*, 'Introduza matriz simetrica A:'
 
 do i= 1, n
   print*, 'Columna :', i
-  read*, a(i:n,i)
+  read*, a(1:n,i)
 end do
 
 print*, 'A matriz A e: '
