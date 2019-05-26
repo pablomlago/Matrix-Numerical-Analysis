@@ -1,8 +1,8 @@
 subroutine chol(a, deter)
   implicit none
 
-  real, dimension(:,:), intent(inout) :: a
-  real, intent(out) :: deter
+  real(8), dimension(:,:), intent(inout) :: a
+  real(8), intent(out) :: deter
 
   integer :: n, i, j, k
 

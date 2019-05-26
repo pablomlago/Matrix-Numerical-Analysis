@@ -2,9 +2,9 @@ subroutine sistl(a, b, w)
 
 implicit none
 
-real, dimension(:,:), intent(in) :: a
-real, dimension(:), intent(in) :: b
-real, dimension(:), intent(out) :: w
+real(8), dimension(:,:), intent(in) :: a
+real(8), dimension(:), intent(in) :: b
+real(8), dimension(:), intent(out) :: w
 
 integer :: n, i, j
 

@@ -1,15 +1,15 @@
 subroutine jacobi(a, b, u, eps, nmaxit, ier)
   implicit none
 
-  real, dimension(:,:), intent(in) :: a
-  real, dimension(:), intent(in) :: b
-  real, dimension(:), intent(out) :: u
-  real, intent(in) :: eps
+  real(8), dimension(:,:), intent(in) :: a
+  real(8), dimension(:), intent(in) :: b
+  real(8), dimension(:), intent(out) :: u
+  real(8), intent(in) :: eps
   integer, intent(in) :: nmaxit
   integer, intent(out) :: ier
 
-  real, dimension(:), allocatable :: v
-  real :: s, err
+  real(8), dimension(:), allocatable :: v
+  real(8) :: s, err
   integer :: n, i, j, k
 
   n = size(b)
@@ -17,6 +17,10 @@ subroutine jacobi(a, b, u, eps, nmaxit, ier)
   allocate(v(n))
 
   do k=1, nmaxit
+    print*,
+    print*,'Iterante',k
+    print*,u(:)
+    print*,
     err = 0
     do i=1,n
       s = 0
@@ -32,7 +36,7 @@ subroutine jacobi(a, b, u, eps, nmaxit, ier)
     end do
 
     do i = 1, n
-        err = err + abs(v(i) - u(i))
+        err = err + abs(v(i))
         u(i) = v(i)
     end do
 

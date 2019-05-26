@@ -2,8 +2,8 @@ subroutine tridiagxvector(ad, al, au, v, w)
 
 implicit none
 
-real, dimension(:), intent(in) :: ad, al, au, v
-real, dimension(:), intent(out) :: w
+real(8), dimension(:), intent(in) :: ad, al, au, v
+real(8), dimension(:), intent(out) :: w
 
 integer:: n
 

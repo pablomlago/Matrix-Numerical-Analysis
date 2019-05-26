@@ -1,4 +1,4 @@
-CC = f95
+CC = gfortran
 MAIN= executable
 
 SRCS = jacobi_interface.f95 datasissim_interface.f95 jacobi.f95 datasissim.f95 jacobi_ppal.f95

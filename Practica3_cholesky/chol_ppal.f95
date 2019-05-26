@@ -8,14 +8,14 @@ use residuo_interface
 
 implicit none
 
-real, dimension(:,:), allocatable :: a
-real, dimension(:,:), allocatable :: a_copia
-real, dimension(:), allocatable :: b
-real, dimension(:), allocatable :: u
-real, dimension(:), allocatable :: w
-real, dimension(:), allocatable :: r
+real(8), dimension(:,:), allocatable :: a
+real(8), dimension(:,:), allocatable :: a_copia
+real(8), dimension(:), allocatable :: b
+real(8), dimension(:), allocatable :: u
+real(8), dimension(:), allocatable :: w
+real(8), dimension(:), allocatable :: r
 
-real :: deter
+real(8) :: deter
 
 integer :: n, i, j
 
@@ -30,7 +30,23 @@ print*
 
 allocate(a(n,n), a_copia(n,n), b(n), u(n), w(n), r(n))
 
-call datasissim(a, b)
+!call datasissim(a, b)
+
+do i=1,n
+  do j=1,n
+    if(i==j) then
+      a(i,j) = 5
+    else
+      a(i,j) = (i+j)/10.
+    end if
+  end do
+  b(i) = 2
+end do
+
+print *,
+do i =1,n
+  print*,a(i,:)
+end do
 
 print*, 'O termo independente b e: '
 print*, b
@@ -69,7 +85,7 @@ print*,
 print*, w
 print*,
 
-call sistu(transpose(a),w,u)
+call sistu(a,w,u)
 
 print*,
 print*, 'Vector u (Solucion): '
@@ -77,6 +93,10 @@ print*,
 
 print*,
 print*, u
+print*,
+
+print*,
+print*, 'Determinante',deter
 print*,
 
 call residuo(a_copia, b, u, r)

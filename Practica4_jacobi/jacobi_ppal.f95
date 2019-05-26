@@ -10,7 +10,7 @@ real, dimension(:), allocatable :: b
 real, dimension(:), allocatable :: u
 
 real :: eps
-integer :: n, i, nmaxit, ier
+integer :: n, i,j, nmaxit, ier
 
 print*
 print*, 'Introduce o orde do sistema: '
@@ -34,7 +34,18 @@ read*, nmaxit
 print*
 
 
-call datasissim(a, b)
+!call datasissim(a, b)
+
+do i=1,n
+  do j=1,n
+    if(i==j) then
+      a(i,j) = 5
+    else
+      a(i,j) = (i+j)*0.1
+    end if
+  end do
+  b(i) = 2
+end do
 
 call jacobi(a, b, u, eps, nmaxit, ier)
 

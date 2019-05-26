@@ -1,4 +1,4 @@
-CC = f95
+CC = gfortran
 MAIN= executable
 
 SRCS = tridiagxvector_interface.f95 residuotri_interface.f95 tridiagxvector.f95 residuotri.f95 tri_ppal.f95

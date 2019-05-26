@@ -2,11 +2,11 @@ subroutine residuo(a, b, u, r)
 
 implicit none
 
-real, dimension(:,:), intent(in) :: a
-real, dimension(:), intent(in) :: b
-real, dimension(:), intent(in) :: u
+real(8), dimension(:,:), intent(in) :: a
+real(8), dimension(:), intent(in) :: b
+real(8), dimension(:), intent(in) :: u
 
-real, dimension(:), intent(inout) :: r
+real(8), dimension(:), intent(inout) :: r
 
 integer :: n, i
 
